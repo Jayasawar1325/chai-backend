@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodeman src/index.js"
+    "dev": "nodemon -r dotenv/config  src/index.js"
   },
   "keywords": [
     "js",
@@ -14,9 +14,12 @@
   "author": "Jayasawar Raut Chhetri",
   "license": "ISC",
   "devDependencies": {
-    "nodeman": "^1.1.2"
+    "nodemon": "^2.0.22"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.3",
     "prettier": "^3.4.1"
   }
 }
